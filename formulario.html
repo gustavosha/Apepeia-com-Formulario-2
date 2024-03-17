@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/chamada.css">
+    <link rel="stylesheet" href="css/planos.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/destaques.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/diferenciais.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/instucional.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <title>apeperia / Gustavo</title>
+</head>
+<body>
+    <header class="cabecalho container">
+        <img src="img/logo-apeperia.svg" alt="Logo da Apeperia" class="cabecalho__logo">
+        <nav>
+            <ul>
+                <li class="cabecalho__link"><a href="index.html">Sobre</a></li>
+                <li class="cabecalho__link"><a href="#"></a>Planos</li>
+                <li class="cabecalho__link"><a href="#"></a>Blog</li>
+                <li class="cabecalho__link"><a href="#"></a>Destaques</li>
+                <li class="cabecalho__link"><a href="#"></a>Institucional</li>
+                <li class="cabecalho__link"><a href="#"></a>Contato</li>
+                <li class="cabecalho__link"><a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <section class="chamada container">
+            <h1 class="chamada__titulo">Aplicativos Na Medida</h1>
+            <p class="chamada__texto">Apeperia tem um jeito inovador de comparar e montar aplicativos para pequenas e
+                médias empresas.</p>
+            <a href="index.html" class="chamada__botao botao">Conheça os planos</a>
+        </section>
+    <h2>Formulário</h2>
+    
+    <form id="myForm">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="text" id="dataNascimento" name="dataNascimento" placeholder="dd/mm/aaaa" pattern="\d{2}/\d{2}/\d{4}" required>
+            <span id="dataNascimentoError" class="error"></span>
+        </div>
+
+   
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="rg">RG:</label>
+            <input type="text" id="rg" name="rg" required placeholder="xx.xxx.xxx-x">
+            <span id="rgError" class="error"></span>
+        </div>
+        <div>
+            <label for="areaAtuacao">Área Futura de Atuação:</label>
+            <select id="areaAtuacao" name="areaAtuacao" required>
+                <option value="outra">Outra Área</option>
+                <option value="humanas">Humanas</option>
+                <option value="exatas">Exatas</option>
+            </select>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="script/script.js"></script>
+</body>
+<footer class="rodape container">
+    <img src="img/Design_sem_nome-removebg-preview.png" alt="logo da Apeperia" class="rodape__logo">
+    <ul class="rodape__social">
+        <li><a href="#" class="rodape__midia"><img src="img/facebook.png" alt="icone facebook"></a></li>
+        <li><a href="#" class="rodape__midia"><img src="img/twitter.png" alt="icone twitter"></a></li>
+        <li><a href="#" class="rodape__midia"><img src="img/instagram.png" alt="icone instagram"></a></li>
+    </ul>
+    <nav>
+        <ul class="rodape__navegacao">
+            <li class="rodape__link"><a href="index.html">Sobre</a></li>
+            <li class="rodape__link"><a href="#">Planos</a></li>
+            <li class="rodape__link"><a href="#">Blog</a></li>
+            <li class="rodape__link"><a href="#">Destaques</a></li>
+            <li class="rodape__link"><a href="#">Institucional</a></li>
+            <li class="rodape__link"><a href="#">Contato</a></li>
+            <li class="rodape__link"><a href="formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+</footer>
+
+</html>

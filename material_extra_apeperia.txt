@@ -1,0 +1,124 @@
+<!--criando section DIFERENCIAIS do html-->
+
+	<section class="diferenciais container">
+            <ul class="diferenciais__lista ">
+                <li class="diferenciais__item">
+                    <h2 class="item__titulo">Tempo</h2>
+                    <p class="item__texto">Tempo é importante! Trabalhamos em ritmo acelerado, atendendo rigorosamente
+                        aos prazos.</p>
+                </li>
+                <li class="diferenciais__item">
+                    <h2 class="item__titulo">Foco</h2>
+                    <p class="item__texto">Focamos no empreendimento! Oferecemos serviços de qualidade com preços
+                        acessíveis.</p>
+                </li>
+                <li class="diferenciais__item">
+                    <h2 class="item__titulo">Especialistas</h2>
+                    <p class="item__texto">Equipe experiente e especializada! Testamos todos os produtos antes do
+                        lançamento.</p>
+                </li>
+            </ul>
+        </section>
+
+/* criando diferenciais.css */
+
+.diferenciais {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.diferenciais__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.diferenciais__item {
+    max-width: 350px;
+
+    box-sizing: border-box;
+
+    padding: 2rem 0 2rem 5rem;
+}
+
+
+.item__titulo {
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    margin-bottom: 1.5rem;
+}
+
+.item__texto {
+    line-height: normal;
+}
+
+
+<!--criando a section SOBRE do html -->
+	<section class="sobre container">
+            <div class="sobre__conteudo">
+                <h2 class="sobre__titulo">Sobre</h2>
+                <p class="sobre__texto">Criamos aplicativos personalizados para <strong
+                        class="sobre__texto--destaque">todas as pessoas</strong>!</p>
+                <p class="sobre__texto">
+                    A manutenção de um aplicativo não pode ser um custo extra para o cliente, Na Apeperia você assina
+                    nosso serviço e a manutenção já está inclusa. Assim, você não se preocupa com manutenção, é tudo por
+                    nossa conta.
+                </p>
+                <p class="sobre__texto sobre__texto--destaque sobre__texto--divisao">
+                    Conte com uma equipe especializada e exclusiva pra projetos incríveis em qualquer plataforma.
+                </p>
+                <ul class="sobre__plataformas">
+                    <li><img src="img/android.png" alt="Ícone do Android"></li>
+                    <li><img src="img/blackberry.png" alt="Ícone da Blackberry"></li>
+                    <li><img src="img/apple.png" alt="Ícone da Apple"></li>
+                    <li><img src="img/windowsphone.png" alt="Ícone da Microsoft"></li>
+                </ul>
+                <p class="sobre__texto">Desenvolvemos aplicativos para todas as plataformas</p>
+            </div>
+            <img src="img/sobre-apeperia.png" alt="Sobre a Apeperia" class="sobre__imagem">
+        </section>
+
+/* criando sobre.css
+
+.sobre {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.sobre__titulo {
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 1.25rem;
+}
+
+.sobre__texto {
+    line-height: normal;
+
+    margin-bottom: 1rem;
+}
+
+.sobre__texto--destaque {
+    color: var(--cinza-escuro);
+    font-weight: 700;
+}
+
+.sobre__plataformas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    margin-bottom: 1rem;
+}
+
+.sobre__imagem{
+    display: none;
+}
+
